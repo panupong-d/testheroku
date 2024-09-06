@@ -1,0 +1,11 @@
+{
+  "name": "app103",
+  "version": "1.0.0",
+  "scripts": {
+    "start:web": "cd web && npm start",
+    "start:api": "cd api && node api.js"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
