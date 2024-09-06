@@ -1,0 +1,44 @@
+/* Base Styles */
+.recommended-food-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: #faf4ea;
+  }
+  
+  .recommended-food-content h1 {
+    font-size: 32px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 45px;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    .recommended-food-content h1 {
+      font-size: 28px; /* ลดขนาดตัวอักษรสำหรับหน้าจอขนาดเล็ก */
+      margin-top: 90px; /* ลดระยะห่างด้านบน */
+      margin-bottom: 15px; /* ลดระยะห่างด้านล่าง */
+    }
+  }
+  
+  /* Responsive Styles for Tablets */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .recommended-food-content h1 {
+      font-size: 28px; /* ลดขนาดตัวอักษรสำหรับแท็บเล็ต */
+      margin-top: 40px; /* ปรับระยะห่างด้านบน */
+      margin-bottom: 18px; /* ปรับระยะห่างด้านล่าง */
+    }
+  }
+  
+  /* Responsive Styles for Large Desktops */
+  @media (min-width: 1200px) {
+    .recommended-food-content h1 {
+      font-size: 36px; /* เพิ่มขนาดตัวอักษรสำหรับหน้าจอขนาดใหญ่ */
+      margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
+      margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+    }
+  }
+  

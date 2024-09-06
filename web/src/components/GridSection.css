@@ -1,0 +1,140 @@
+/* src/components/GridSection.css */
+
+.grid-section {
+  margin-top: 40px;
+  width: 100%;
+  font-family: 'Kanit', sans-serif;
+}
+
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-title {
+  font-size: 24px;
+  padding: 5px 10px;
+  padding-left: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
+.view-all-button {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #006400;
+  border: none;
+}
+
+.view-all-button:hover {
+  background-color: #0c9c0c; /* Light Green */
+  border: none; /* Match the border color with the background */
+}
+
+.grid-divider {
+  width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 1 calc(25% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #d6c3a8;
+  overflow: hidden;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Scale up the image */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  transform-origin: center;
+}
+
+.card-body {
+  padding: 10px;
+  color: rgb(0, 0, 0); /* Black text color */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 1 calc(33.33% - 10px);
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .grid-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-all-button {
+    margin-top: 10px;
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 10px); /* Display 2 cards per row */
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 calc(50% - 10px); /* Display 2 cards per row */
+  }
+  
+  .grid-section{
+    padding: 10px;
+  }
+
+  .grid-header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .grid-title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .view-all-button {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}

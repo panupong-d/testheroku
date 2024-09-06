@@ -1,0 +1,56 @@
+/* src/components/ImportantPlaces.css */
+
+.important-places-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: #faf4ea
+  }
+  
+  .important-places-content h1 {
+    font-size: 32px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 45px;
+  }
+  
+  /* Responsive adjustments for different screen sizes */
+  
+  /* For large desktops */
+  @media (min-width: 1200px) {
+    .important-places-content h1 {
+      
+      font-size: 36px; /* Slightly larger font for large screens */
+      margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
+      margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+    }
+
+    .important-places-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Kanit', sans-serif;
+        
+      }
+  }
+  
+  /* For tablets and smaller desktops */
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .important-places-content h1 {
+      font-size: 32px; /* Default font size for tablets and smaller desktops */
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 767px) {
+    .important-places-content h1 {
+      font-size: 28px; /* Smaller font size for mobile screens */
+      margin-top: 90px; /* Adjust margin for mobile screens */
+      margin-bottom: 15px; /* Adjust margin for mobile screens */
+    }
+
+
+  }
+  

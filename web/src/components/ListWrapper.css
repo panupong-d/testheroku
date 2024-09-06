@@ -1,0 +1,101 @@
+/* Ensure the slider container is positioned correctly */
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Full-width slider */
+.slider-fullwidth {
+  width: 100%;
+  margin: 0;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Each slide */
+.slide-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Default height */
+  text-align: center;
+}
+
+/* Image styling */
+.image {
+  max-width: 100%; /* Ensure the image does not overflow its container */
+  max-height: 100%; /* Ensure the image does not overflow its container */
+  object-fit: cover; /* Cover the entire slide area while preserving aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Slider controls */
+.slider-controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Control buttons */
+.slider-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Media queries for responsiveness */
+
+/* For large desktop screens (e.g., 4K monitors) */
+@media (min-width: 2560px) {
+  .slide-item {
+    height: 500px; /* Increase height for large screens */
+  }
+  
+  .slider-control {
+    font-size: 28px; /* Increase font size for larger screens */
+    padding: 12px; /* Increase padding */
+  }
+}
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .slide-item {
+    height: 100%; /* Adjust height for tablets and smaller desktops */
+  }
+  
+  .slider-control {
+    font-size: 20px; /* Adjust font size for tablets */
+    padding: 8px; /* Reduce padding */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .slide-item {
+    height: 200px; /* Further reduce height for mobile */
+  }
+  
+  .slider-control {
+    font-size: 18px; /* Further reduce font size */
+    padding: 6px; /* Further reduce padding */
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .slide-item {
+    height: 100%; /* Adjust height for very small screens */
+    padding-top: 0px;
+  }
+  
+  .slider-control {
+    font-size: 16px; /* Further reduce font size */
+    padding: 5px; /* Further reduce padding */
+  }
+}

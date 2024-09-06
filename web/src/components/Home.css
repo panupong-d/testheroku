@@ -1,0 +1,119 @@
+/* src/components/Home.css */
+
+/* Base Styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: #faf4ea;
+  }
+  
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* ระยะห่างระหว่าง sections */
+  }
+  
+  .header-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .header-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section-text {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 0px;
+      padding-top: 50px;
+    }
+    
+    .section {
+      flex: 0 1 100%; /* One section per row */
+    }
+  
+    .header-title {
+      font-size: 24px;
+    }
+  
+    .header-subtitle {
+      font-size: 14px;
+    }
+  
+    .section-title {
+      font-size: 20px;
+    }
+  
+    .section-text {
+      font-size: 14px;
+    }
+  }
+  
+  /* Responsive Styles for Tablets */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .home-container {
+      padding: 0px;
+    }
+    
+    .section {
+      flex: 0 1 calc(50% - 15px); /* Two sections per row with space in between */
+    }
+  
+    .header-title {
+      font-size: 28px;
+    }
+  
+    .header-subtitle {
+      font-size: 16px;
+    }
+  
+    .section-title {
+      font-size: 22px;
+    }
+  
+    .section-text {
+      font-size: 15px;
+    }
+  }
+  
+  /* Responsive Styles for Large Desktops */
+  @media (min-width: 1200px) {
+    .home-container {
+      padding: 0px;
+    }
+    
+    .section {
+      flex: 0 1 calc(33.333% - 20px); /* Three sections per row with space in between */
+    }
+  
+    .header-title {
+      font-size: 36px;
+    }
+  
+    .header-subtitle {
+      font-size: 18px;
+    }
+  
+    .section-title {
+      font-size: 26px;
+    }
+  
+    .section-text {
+      font-size: 18px;
+    }
+  }
+  

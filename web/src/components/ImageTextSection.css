@@ -1,0 +1,82 @@
+/* src/components/ImageTextSection.css */
+
+.image-text-section {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 0px;
+  margin-top: 20px; /* Add margin-top to separate from ListWrapper */
+}
+
+/* Image section styles */
+.image-section {
+  flex: 1;
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Image styles */
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Text section styles */
+.text-section {
+  flex: 2;
+}
+
+.text-section p {
+  
+  line-height: 1.5;
+  margin: 0;
+}
+
+.namethai {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .image-text-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-section {
+    text-align: left;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .image-text-section {
+    padding: 10px;
+  }
+
+  .namethai {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .info {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+}

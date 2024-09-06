@@ -1,0 +1,128 @@
+/* src/components/FoodGridSection.css */
+
+.grid-section {
+    margin-top: 40px;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-title {
+    font-size: 24px;
+    padding: 5px 10px;
+    padding-left: 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+.view-all-button {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #006400;
+    border: none;
+}
+
+.view-all-button:hover {
+    background-color: #0c9c0c; /* Light Green */
+    border: none; /* Match the border color with the background */
+}
+
+.grid-divider {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 10px; /* Add space between cards */
+    padding: 0; /* Remove padding if necessary */
+}
+
+.card {
+    flex: 0 1 calc(25% - 10px); /* Four cards per row on desktop */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 10px;
+    color: rgb(0, 0, 0); /* Black text color */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 1 calc(33.333% - 10px); /* Three cards per row */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .grid-title {
+        font-size: 20px;
+    }
+
+    .view-all-button {
+        font-size: 14px;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 10px); /* Two cards per row */
+    }
+
+    .card-img-top {
+        height: 150px; /* Adjust image height */
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    .grid-section {
+        margin-top: 10px;
+        width: 100%;
+        font-family: 'Kanit', sans-serif;
+    }
+    .grid-title {
+        font-size: 18px;
+    }
+
+    .view-all-button {
+        font-size: 12px;
+    }
+
+    .card {
+        flex: 0 1 calc(100% - 10px); /* One card per row */
+    }
+
+    .card-img-top {
+        height: 120px; /* Further adjust image height */
+    }
+}

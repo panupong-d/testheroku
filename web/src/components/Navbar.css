@@ -1,0 +1,103 @@
+/* src/components/Navbar.css */
+
+/* Styles for desktop and larger screens */
+.navbar-custom {
+  background-color: #ffffff; /* White background */
+  margin-left: 0px; /* Remove margin-left */
+  padding-left: 190px; /* Adjust padding as needed */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-shadow: 0 4px 2px -2px rgb(180, 180, 180);
+  display: flex;
+  justify-content: space-between; /* Adjust alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 70px; /* Adjust the height as needed */
+  width: 110px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-text {
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 18px; /* Adjust font size as needed */
+  font-family: 'Kanit', sans-serif; /* Apply Kanit font */
+}
+
+.nav-link {
+  color: rgb(0, 0, 0) !important; /* Black text color */
+  font-family: 'Kanit', sans-serif; /* Apply Kanit font */
+}
+
+.nav-link:hover {
+  color: #006400 !important; /* Dark Green on hover */
+}
+
+/* Adjust the contact link position */
+.ml-auto {
+  margin-left: auto; /* Push the contact link to the far right */
+  margin-right: 200px; /* Adjust margin-right */
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and small desktop screens */
+@media (max-width: 1200px) {
+  .navbar-custom {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+    padding-right: 10px; /* Add padding on the right for smaller screens */
+  }
+
+  .ml-auto {
+    margin-left: 0; /* Reset margin-left */
+    margin-top: 10px; /* Add some margin-top if needed */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding-left: 10px; /* Reduce padding for mobile */
+    padding-right: 10px; /* Add padding on the right for mobile */
+    flex-direction: row; /* Ensure items stay in a row */
+    align-items: center; /* Center items vertically */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .ml-auto {
+    margin-left: 0; /* Reset margin-left */
+    margin-top: 0; /* Reset margin-top */
+    text-align: left; /* Center text for mobile */
+  }
+
+  .navbar-brand {
+    margin-bottom: 0; /* Remove margin at the bottom */
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .navbar-custom {
+    padding-left: 5px; /* Further reduce padding for very small screens */
+    padding-right: 5px; /* Further reduce padding on the right */
+  }
+
+  .navbar-logo {
+    height: 50px; /* Reduce logo height */
+    width: auto; /* Allow width to adjust automatically */
+  }
+
+  .navbar-text {
+    font-size: 16px; /* Reduce font size for very small screens */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Reduce font size for very small screens */
+  }
+}

@@ -1,0 +1,80 @@
+/* src/components/Footer.css */
+
+.footer-custom {
+  background-color: #006400; /* Dark Green */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  max-width: 1140px; /* Optional: Adjust to match the layout width */
+  margin: 0 auto; /* Center the container */
+}
+
+.row.footer-content {
+  display: flex; /* Ensure row is a flex container */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: flex-start; /* Align items at the start (top) */
+}
+
+.col-md-4.footer-box {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Space between rows on smaller screens */
+  flex: 1 1 calc(33.333% - 20px); /* Take 1/3rd of the width minus margins */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.footer-box h4 {
+  margin: 0 0 10px;
+  font-size: 24px; /* Adjust font size for section headings */
+  text-align: left;
+}
+
+.footer-box p {
+  margin: 0; /* Remove default margin from paragraphs */
+  line-height: 1.5; /* Adjust line height for better readability */
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.social-icons {
+  display: flex; /* Display icons in a row */
+  flex-direction: row; /* Stack icons horizontally */
+  align-items: center; /* Center icons vertically */
+  justify-content: left; /* Left align icons horizontally */
+  gap: 20px; /* Space between icons */
+}
+
+.social-icons a {
+  color: white; /* White color for icons */
+  font-size: 24px; /* Size of icons */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons a:hover {
+  color: #b3d9ff; /* Light blue color on hover */
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .col-md-4.footer-box {
+    flex: 1 1 calc(50% - 20px); /* Take 1/2 of the width minus margins */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .col-md-4.footer-box {
+    flex: 1 1 100%; /* Take full width minus margins */
+  }
+
+  .social-icons {
+    justify-content: left; /* Center icons horizontally on mobile */
+  }
+}

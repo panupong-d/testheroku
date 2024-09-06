@@ -1,0 +1,83 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: #faf4ea;
+  }
+  
+  .contact-container-container h1 {
+    font-size: 32px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 45px;
+  }
+
+  .social-iconn {
+    color: white; /* White color for icons */
+    font-size: 24px; /* Size of icons */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .social-iconn {
+    color: #b3d9ff; /* Light blue color on hover */
+  }
+
+  .social-iconss {
+    display: flex; /* Display icons in a row */
+    flex-direction: row; /* Stack icons horizontally */
+    align-items: center; /* Center icons vertically */
+    justify-content: left; /* Left align icons horizontally */
+    gap: 20px; /* Space between icons */
+  }
+
+  .social-iconss a {
+    color: rgb(0, 0, 0); /* White color for icons */
+    font-size: 24px; /* Size of icons */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .social-iconss a:hover {
+    color: #b3d9ff; /* Light blue color on hover */
+  }
+  
+  
+    /* Responsive adjustments for different screen sizes */
+  
+  /* For large desktops */
+  @media (min-width: 1200px) {
+    .contact-container h1 {
+      
+      font-size: 36px; /* Slightly larger font for large screens */
+      margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
+      margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Kanit', sans-serif;
+        
+      }
+  }
+  
+  /* For tablets and smaller desktops */
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .contact-container h1 {
+      font-size: 32px; /* Default font size for tablets and smaller desktops */
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 767px) {
+    .contact-container h1 {
+      font-size: 28px; /* Smaller font size for mobile screens */
+      margin-top: 90px; /* Adjust margin for mobile screens */
+      margin-bottom: 15px; /* Adjust margin for mobile screens */
+    }
+
+
+  }
+  

@@ -1,0 +1,46 @@
+/* src/App.css */
+@font-face {
+  font-family: 'kanit';
+  src: url(./assets/fonts/Kanit/Kanit-Regular.ttf);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* สำหรับคอนเทนต์ที่ใช้ flexbox */
+.content {
+  flex: 1; /* Allow content to expand and take up available space */
+  margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+  padding: 20px; /* เพิ่ม padding เพื่อให้คอนเทนต์ไม่ชิดขอบ */
+  box-sizing: border-box; /* รวม padding ในการคำนวณขนาด */
+}
+
+/* Media Queries สำหรับมือถือ */
+@media (max-width: 768px) {
+  .content {
+    margin: 0px; /* ลด margin สำหรับหน้าจอขนาดเล็ก */
+    padding: 0px; /* ลด padding สำหรับหน้าจอขนาดเล็ก */
+    
+  }
+}
+
+/* Media Queries สำหรับเดสก์ท็อป */
+@media (min-width: 769px) {
+  .content {
+    margin: 50px; /* กำหนด margin ที่เหมาะสมสำหรับเดสก์ท็อป */
+    padding: 20px; /* กำหนด padding ที่เหมาะสมสำหรับเดสก์ท็อป */
+  }
+}
+
+/* Media Queries สำหรับขนาดหน้าจอใหญ่พิเศษ (เช่น เดสก์ท็อปขนาดใหญ่) */
+@media (min-width: 1200px) {
+  .content {
+    margin: 100px; /* เพิ่ม margin สำหรับหน้าจอขนาดใหญ่ */
+    padding: 110px; /* เพิ่ม padding สำหรับหน้าจอขนาดใหญ่ */
+    padding-top: 10px;
+  }
+}
